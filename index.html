@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
+     <script src="lab.js"></script>
+     <script src="misturas.js"></script>
+     <script src="sw.js"></script>
+     <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img class="icon" src="bioquimica.png">
+            <h1 class="logonome">MaxLab</h1>
+        </div>
+
+        <div class="perfil">
+            <img src="perfil provi.png" class="fotoperfil" alt="" srcset="">
+            <h3>Nura Pechliye</h3>
+
+            <div class="sair">
+                <button class="sairbot" src="login.html">Sair</button>
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <nav>
+        <a href="index.html">Início | </a>
+        <a href="sobre.html">Sobre | </a>
+        <a href="ranking.html">Ranking Geral | </a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+    <br><br><br>
+
+    <center>
+        <div class="conteudo">
+
+            <main class="quadro" id="fazer">
+
+                <form action="misturar.php" method="POST">
+                    <br>
+                    <h1>Faça a sua mistura!</h1> <br>
+
+
+                    <label for="">Escolha o primeiro reagente:</label>
+                    <br>
+                    <select class="obj1" name="reagente1">
+                        <option value="H2O"> Água (H₂O)</option>
+                        <option value="CH3COOH"> Vinagre (CH₃COOH)</option>
+                        <option value="NaHCO3"> Bicarbonato de Sódio (NaHCO₃)</option>
+                        <option value="NaCl"> Sal (NaCl)</option>
+                        <option value="C12H22O11"> Açúcar (C₁₂H₂₂O₁₁)</option>
+                        <option value="HCl"> Ácido Clorídrico (HCl)</option>
+                        <option value="NaOH"> Hidróxido de Sódio (NaOH)</option>
+                        <option value="CuSO4"> Sulfato de Cobre (CuSO₄)</option>
+                        <option value="AgNO3"> Nitrato de Prata (AgNO₃)</option>
+                        <option value="C2H5OH"> Etanol (C₂H₅OH)</option>
+                    </select>
+                    <br>
+                    <div class="obj2"></div>
+                    <br>
+                    <label for="">Escolha o segundo reagente:</label>
+                    <br>
+                    <select class="obj3" name="reagente2">
+                        <option value="H2O"> Água (H₂O)</option>
+                        <option value="CH3COOH"> Vinagre (CH₃COOH)</option>
+                        <option value="NaHCO3"> Bicarbonato de Sódio (NaHCO₃)</option>
+                        <option value="NaCl"> Sal (NaCl)</option>
+                        <option value="C12H22O11"> Açúcar (C₁₂H₂₂O₁₁)</option>
+                        <option value="HCl"> Ácido Clorídrico (HCl)</option>
+                        <option value="NaOH"> Hidróxido de Sódio (NaOH)</option>
+                        <option value="CuSO4"> Sulfato de Cobre (CuSO₄)</option>
+                        <option value="AgNO3"> Nitrato de Prata (AgNO₃)</option>
+                        <option value="C2H5OH"> Etanol (C₂H₅OH)</option>
+                    </select>
+
+                    <br><br>
+                    <label for="">Escolha a condição da mistura:</label>
+                    <br>
+                    <select class="obj4" name="condicao">
+                        <option value="ambiente">Temperatura Ambiente</option>
+                        <option value="quente">Alta Temperatura (Aquecer)</option>
+                        <option value="frio">Baixa Temperatura (Resfriar)</option>
+                        <option value="agitar">Agitar / Misturar Vigorosamente</option>
+                        <option value="repouso">Repouso (sem agitar)</option>
+                    </select>
+
+                    <br><br> <button type="submit">Misturar</button>
+                </form>
+
+                <div id="resultado" class="result" style="display:none;">
+                    <br><br><br><br>
+                    <h2>Resultado:</h2>
+                    <p id="textoResultado"></p>
+
+                    <button onclick="voltar()">Voltar</button>
+                </div>
+
+            </main>
+
+            <aside>
+
+                <ul>
+                    <li>Histórico</li>
+                    <li>Histórico</li>
+                    <li>Histórico</li>
+                    <li>Histórico</li>
+                    <li>Histórico</li>
+                    <li>Histórico</li>
+                    <li>Histórico</li>
+                </ul>
+
+            </aside>
+
+        </div>
+    </center>
+
+
+    <footer>
+        <p>&copy; 2026 MaxLab. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

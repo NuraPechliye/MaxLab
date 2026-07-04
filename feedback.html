@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="feedback.css">
+    <script src="sw.js"></script>
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img class="icon" src="bioquimica.png">
+            <h1 class="logonome">MaxLab</h1>
+        </div>
+
+        <div class="perfil">
+            <img src="perfil provi.png" class="fotoperfil" alt="" srcset="">
+            <h3>Nura Pechliye</h3>
+
+            <div class="sair">
+                <button class="sairbot" src="login.html">Sair</button>
+            </div>
+        </div>
+
+
+    </header>
+
+    <nav>
+        <a href="index.html">Início | </a>
+        <a href="sobre.html">Sobre | </a>
+        <a href="ranking.html">Ranking Geral | </a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+    <br><br><br>
+
+
+    <div class="conteudo">
+        <center>
+        <h1>Faça o seu feedback!</h1> <br>
+
+        <form action="feedback.php" method="post">
+
+            <label for="">O que achou do nosso jogo?</label> <br>
+            <input type="text" name="" id=""><br><br>
+
+            <label for="">Alguma sugestão ou reclamação?</label><br>
+            <input type="text" name="" id=""><br><br>
+
+            <label for="">Quantas estrelas nos dá?</label><br>
+            <div class="estrelas">
+                <input type="radio" id="estrela5" name="nota" value="5">
+                <label for="estrela5">★</label>
+
+                <input type="radio" id="estrela4" name="nota" value="4">
+                <label for="estrela4">★</label>
+
+                <input type="radio" id="estrela3" name="nota" value="3">
+                <label for="estrela3">★</label>
+
+                <input type="radio" id="estrela2" name="nota" value="2">
+                <label for="estrela2">★</label>
+
+                <input type="radio" id="estrela1" name="nota" value="1">
+                <label for="estrela1">★</label>
+            </div><br><br>
+
+            <button type="submit">Enviar!</button>
+
+        </form>
+
+    </center>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2026 MaxLab. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

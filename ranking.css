@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: black;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+header {
+    background: #baf7a7;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3vh;
+    background: #7ca96a;
+}
+
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotoperfil {
+    width: 10vh;
+    height: 10vh;
+}
+
+.icon {
+    background-color: rgb(39, 203, 33);
+    width: 10vh;
+    height: 10vh;
+    border-radius: 10vh;
+}
+
+.logonome {
+    font-size:300%;
+    font-family: fantasy;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    border-radius:20px;
+    background-color: aliceblue;
+    width: 100vh;
+    height: 100vh;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.sairbot {
+    background-color: rgb(255, 0, 0);
+    color: aliceblue;
+    border-radius: 20px;
+    height: 20px;
+}
+
+button{
+    margin-top:20px;
+    width:180px;
+    border:none;
+    border-radius:20px;
+    background:#38d55c;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+footer{
+    margin-top: 40px;
+    background: #4b4b4b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
